@@ -72,6 +72,7 @@ body {
   text-decoration: none;
   text-align: center;
   color: inherit;
+  align-items: flex-start;
 }
 
 .visually-hidden {
@@ -108,8 +109,21 @@ body {
   text-align: center;
 }
 
+
+
 .advantages-content {
   display: inline-block;
+  list-style-type: none;
+  width: 400px;
+  height: 384px;
+  background: #82B3D3;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.advantages-list {
+  list-style-type: none;
 }
 
 .advantages-panels {
@@ -117,11 +131,64 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
 }
 
 .services {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
+}
+
+.button-services {
+  background: #756157;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 574px;
+  height: 60px;
+
+}
+
+.spam {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.spam-images {
+  background-image: url("../images/background-spam.png");
+  width: 1200px;
+  height: 411px;
+  background-color: white;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+}
+.social-link {
+  margin: 12px;
+  text-decoration: none;
+}
+
+.phone-numder a {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-list {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
 }
