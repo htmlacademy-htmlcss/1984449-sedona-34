@@ -162,8 +162,12 @@ body {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list > :nth-of-type(4) {
+.advantages-list> :nth-of-type(4) {
   background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list>.advantages-content:nth-child(3), .advantages-list>.advantages-content:last-of-type {
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-panels {
@@ -282,7 +286,7 @@ body {
   color: #FFFFFF;
 }
 
-.breadcrambs-link {
+.breadcrumbs-link {
   color: #FFFFFF;
 }
 
@@ -301,6 +305,7 @@ form label {
 .form-control {
   font-family: 'PT Sans';
   font-size: 18px;
+  background: none;
 }
 
 .form-control::placeholder {
@@ -333,8 +338,11 @@ form button:first-of-type {
 .product-card {
   font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.product-card-link {
+  text-decoration: none;
 }
 
 .product-card-title {
@@ -350,6 +358,9 @@ form button:first-of-type {
 
 .product-card .product-card-button {
   background: #756157;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .product-card a:nth-of-type(3) {
@@ -397,6 +408,19 @@ form input {
   background: #F2F2F2;
 }
 
+form button {
+  background: none;
+}
+
+.rating-caption p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background: #F2F2F2;
+}
+
+
 .hotels-per-page {
   display: flex;
 
@@ -414,5 +438,3 @@ footer {
   list-style-type: none;
   flex-direction: row;
 }
-
-
