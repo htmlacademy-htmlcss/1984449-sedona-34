@@ -388,7 +388,7 @@ body {
   width: 800px;
 }
 
-form input {
+.spam form input {
   width: 600px;
   height: 60px;
   border-radius: 10px 0 0 10px;
@@ -412,10 +412,77 @@ form input {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.catalog-products form {
+  display: flex;
+}
+
+.filter-column {
+  margin-right: 70px;
+}
+
+.type-of-housing {
+  margin-right: 176px;
+  white-space: nowrap;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  position: relative;
+}
+
+.col input {
+  width: 144px;
+  height: 48px;
+  border-radius: 4px;
+  border-color: white;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.lowerprice:after {
+  content: "от";
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  color: white;
+  opacity: 30%;
+}
+
+.highprice:after {
+  content: "до";
+  position: absolute;
+  right: 0px;
+  color: white;
+  opacity: 30%;
+  top: 12px;
+  right: 17px;
 }
 
 .breadcrumbs-link {
   color: #FFFFFF;
+}
+
+.breadcrumbs .breadcrumbs-item {
+  list-style: url(../images/breadcrumbs.svg);
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.breadcrumbs .breadcrumbs-item:first-child {
+  list-style: none;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.breadcrumbs-home {
+  margin-right: 10px;
 }
 
 form span {
@@ -451,9 +518,26 @@ form button {
 form button:first-of-type {
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 20px;
   text-transform: uppercase;
   background: #82B3D3;
+  border-radius: 4px;
+  border-width: 0;
+  width: 160px;
+  height: 48px;
+}
+
+.reset {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  background: none;
+  border-radius: 4px;
+  border-width: 0;
+  width: 160px;
+  height: 48px;
+  color: white;
+  margin-top: 3px;
 }
 
 .select-control {
@@ -522,6 +606,8 @@ form button:first-of-type {
 
 .breadcrumbs {
   list-style-type: none;
+  display: flex;
+  padding-left: 0;
 }
 
 .filters {
@@ -530,6 +616,7 @@ form button:first-of-type {
   color: black;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding: 35px 70px 70px 70px;
 }
 
 form input {
