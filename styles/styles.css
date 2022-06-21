@@ -20,12 +20,16 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
+  width: 1200px;
+}
 
+#wraper {
+  margin: 0 auto;
 }
 
 .page-header {
@@ -53,7 +57,7 @@ body {
 }
 
 .navigation-item {
-  margin: 20px 17px 19px 17px;
+  margin: 0px 17px 0px 17px;
 }
 
 .navigation-user {
@@ -101,10 +105,19 @@ body {
 }
 
 .main-images {
+  display: block;
+}
+
+.welcome {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+}
+
+.divider {
+  position: relative;
+  top: 25px;
 }
 
 .main-inner h2 {
@@ -112,7 +125,6 @@ body {
   line-height: 36px;
   text-transform: uppercase;
 }
-
 
 
 .description {
@@ -145,7 +157,7 @@ body {
 
 .advantages-content p {
   font-size: 18px;
-  margin:0;
+  margin: 0;
 }
 
 .real-city {
@@ -165,6 +177,12 @@ body {
 
 .devil-bridge {
   display: flex;
+  list-style-type: none;
+  height: 384px;
+  background: #82B3D3;
+  color: white;
+  text-align: center;
+  align-items: center;
 }
 
 .devil-bridge .advantages-content {
@@ -204,13 +222,15 @@ body {
   flex-direction: row;
   padding: 0;
 }
+
 .bottom-panels .advantages-content {
-padding:103px 85px 102px 85px;
+  padding: 103px 85px 102px 85px;
 }
 
-.bottom-panels .advantages-content b{
-word-break: break-all;
+.bottom-panels .advantages-content b {
+  word-break: break-all;
 }
+
 .advantages-panels li:first-child, .advantages-panels li:last-child {
   background: rgba(131, 179, 211, 0.12);
 }
@@ -231,7 +251,7 @@ word-break: break-all;
   padding: 80px 85px 81px 85px;
 }
 
-.number-sub-title{
+.number-sub-title {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -251,12 +271,14 @@ word-break: break-all;
 .services h2 {
   font-size: 30px;
   line-height: 36px;
+  margin: 91px 451px 29px 452px;
 }
 
 .services p {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0 304px 56px 304px;
 }
 
 .button-services {
@@ -267,6 +289,7 @@ word-break: break-all;
   font-size: 20px;
   width: 574px;
   height: 60px;
+  margin: 0 313px 93px 313px;
 }
 
 .spam {
@@ -282,6 +305,14 @@ word-break: break-all;
   text-transform: uppercase;
 }
 
+.spam-images h2 {
+  margin: 94px 398px 29px 398px;
+}
+
+.spam-images p {
+  margin: 0px 362px 46px 363px;
+}
+
 .spam p {
   font-size: 22px;
   line-height: 26px;
@@ -294,6 +325,8 @@ word-break: break-all;
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  border-radius: 0 10px 10px 0;
+  width: 200px;
 }
 
 .spam-images {
@@ -310,6 +343,7 @@ word-break: break-all;
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  margin: 0px 362px 46px 363px
 }
 
 .spam-images h2 {
@@ -317,7 +351,22 @@ word-break: break-all;
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 94px 398px 29px 398px;
 }
+
+.form-style {
+  display: flex;
+  margin: auto;
+  width: 800px;
+}
+
+form input {
+  width: 600px;
+  height: 60px;
+  border-radius: 10px 0 0 10px;
+  padding-left: 22px;
+}
+
 
 .social-link {
   margin: 12px;
@@ -491,5 +540,6 @@ footer {
 }
 
 .icon-logo {
-  margin: 0 30px 0 70px;
+  margin-bottom: -5px;
+  position: relative;
 }
