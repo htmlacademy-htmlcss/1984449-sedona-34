@@ -576,12 +576,18 @@ form button:first-of-type {
   justify-content: space-evenly;
 }
 
-.column-left{
-  display: contents;
+.columns {
+  display: flex;
 }
 
-.column-right{
-  display: contents;
+.column-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card {
@@ -631,10 +637,27 @@ form button:first-of-type {
   background: #F2F2F2;
 }
 
-.pagination{
+.pagination {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+.pagination-numbers {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-item {
+  padding: 11px 0 12px 0px;
+  text-align: center;
+  width: 60px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-numbers li {
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -642,11 +665,15 @@ form button:first-of-type {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-  background: #82B3D3;
+  text-decoration:none;
 }
 
 .pagination-current {
   background: #F2F2F2;
+}
+
+.pagination-current a {
+color: #000000;
 }
 
 .breadcrumbs {
