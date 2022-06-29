@@ -28,7 +28,7 @@ body {
   width: 1200px;
 }
 
-.main-idex .main-inner {
+.main-index, .main-inner {
   flex-grow: 1;
 }
 
@@ -43,7 +43,6 @@ body {
 .main-inner .spam-images p {
   color: #333333;
 }
-
 
 #wraper {
   margin: 0 auto;
@@ -587,11 +586,14 @@ form button:first-of-type {
 }
 
 .product-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 1056px;
   padding-left: 0;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+
 }
 
 .columns {
