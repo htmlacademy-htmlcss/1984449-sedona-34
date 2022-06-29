@@ -28,9 +28,22 @@ body {
   width: 1200px;
 }
 
-.main-idex {
+.main-idex .main-inner {
   flex-grow: 1;
 }
+
+.main-inner .spam-images {
+  background: none;
+}
+
+.main-inner .spam-images h2 {
+  color: #000000;
+}
+
+.main-inner .spam-images p {
+  color: #333333;
+}
+
 
 #wraper {
   margin: 0 auto;
@@ -557,6 +570,9 @@ form button:first-of-type {
 
 .sorting {
   display: flex;
+  width: 1057px;
+  margin: auto;
+  align-items: center;
 }
 
 .select-control {
@@ -571,9 +587,11 @@ form button:first-of-type {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  width: 1056px;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
 }
 
 .columns {
@@ -641,6 +659,8 @@ form button:first-of-type {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1056px;
+  margin: auto;
 }
 
 .pagination-numbers {
@@ -665,7 +685,7 @@ form button:first-of-type {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .pagination-current {
@@ -673,7 +693,7 @@ form button:first-of-type {
 }
 
 .pagination-current a {
-color: #000000;
+  color: #000000;
 }
 
 .breadcrumbs {
