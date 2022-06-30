@@ -572,6 +572,7 @@ form button:first-of-type {
   width: 1057px;
   margin: auto;
   align-items: center;
+  justify-content: space-between;
 }
 
 .select-control {
@@ -603,11 +604,14 @@ form button:first-of-type {
 .column-left {
   display: flex;
   flex-direction: column;
+  margin-right: 16px;
+  width: 140px;
 }
 
 .column-right {
   display: flex;
   flex-direction: column;
+  width: 140px;
 }
 
 .product-card {
@@ -616,6 +620,7 @@ form button:first-of-type {
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
+
 }
 
 .product-card-link {
@@ -631,6 +636,7 @@ form button:first-of-type {
 .product-card span {
   font-size: 18px;
   color: #333333;
+  margin-bottom: 20px;
 }
 
 .product-card .product-card-button {
@@ -638,6 +644,30 @@ form button:first-of-type {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  margin-bottom: 16px;
+  padding: 9px 15px 8px 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.product-card .product-card-button.button-right {
+  background: #82B3D3;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 16px;
+  padding: 9px 15px 8px 15px;
+  border-radius: 4px;
+}
+
+.product-card .product-card-button.button-green {
+  background: #7DB54F;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 16px;
+  padding: 9px 15px 8px 15px;
+  border-radius: 4px;
 }
 
 .product-card a:nth-of-type(3) {
@@ -655,6 +685,8 @@ form button:first-of-type {
   line-height: 20px;
   color: #333333;
   background: #F2F2F2;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
 }
 
 .pagination {
