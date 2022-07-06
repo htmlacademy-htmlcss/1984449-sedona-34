@@ -304,9 +304,6 @@ width: 130px;
   width: 180px;
 }
 
-.advantages-panels li:first-child p{
-  width: 180px;
-}
 
 .advantages-panels li:first-child, .advantages-panels li:last-child {
   background: rgba(131, 179, 211, 0.12);
