@@ -284,12 +284,10 @@ body {
   display: flex;
   flex-direction: row;
   padding: 0;
-
 }
 
 .bottom-panels li:nth-child(2) b {
-
-width: 130px;
+  width: 130px;
 }
 
 .bottom-panels .advantages-content {
@@ -304,7 +302,6 @@ width: 130px;
   width: 180px;
 }
 
-
 .advantages-panels li:first-child, .advantages-panels li:last-child {
   background: rgba(131, 179, 211, 0.12);
 }
@@ -315,8 +312,6 @@ width: 130px;
   padding-bottom: 30px;
   margin: 0;
 }
-
-
 
 .advantages-panels li {
   font-size: 18px;
@@ -628,7 +623,6 @@ form button:first-of-type {
   justify-content: space-between;
 }
 
-
 .product-card {
   font-weight: 700;
   line-height: 20px;
@@ -643,7 +637,6 @@ form button:first-of-type {
 .product-card-link {
   text-decoration: none;
   grid-column: 1 / 3;
-
 }
 
 .product-card-title {
@@ -657,7 +650,7 @@ form button:first-of-type {
 .product-card span {
   font-size: 18px;
   color: #333333;
-
+  font-weight: 400;
 }
 
 .product-card .product-card-button {
@@ -665,7 +658,6 @@ form button:first-of-type {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
-
   padding: 9px 15px 8px 15px;
   border-radius: 4px;
   text-align: center;
@@ -676,7 +668,6 @@ form button:first-of-type {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
-
   padding: 9px 15px 8px 15px;
   border-radius: 4px;
 }
@@ -686,7 +677,6 @@ form button:first-of-type {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
-
   padding: 9px 15px 8px 15px;
   border-radius: 4px;
 }
@@ -788,11 +778,14 @@ form button {
   background: #F2F2F2;
 }
 
-
 .hotels-per-page {
   display: flex;
   width: 386px;
   justify-content: space-between;
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .hotels-per-page select {
