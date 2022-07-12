@@ -783,7 +783,7 @@ form button {
   justify-content: space-between;
 }
 
-.hotels-per-page span {
+.hotels-per-page select {
   font-family: 'PT Sans';
   font-size: 18px;
   line-height: 21px;
