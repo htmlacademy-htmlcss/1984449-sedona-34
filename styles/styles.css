@@ -84,6 +84,13 @@ body {
 
 .navigation-list .navigation-item {
   margin: 0px 17px;
+  height: 58px;
+  line-height: 64px;
+}
+
+.navigation-list .navigation-item--selected {
+  border-bottom: 2px solid #000000;
+  line-height: 66px;
 }
 
 .navigation-user {
@@ -213,6 +220,10 @@ body {
 .advantages-content p {
   font-size: 18px;
   margin: 0;
+}
+
+.advantages-panels .advantages-content:nth-child(2) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .real-city {
@@ -436,6 +447,7 @@ body {
   height: 60px;
   border-radius: 10px 0 0 10px;
   padding-left: 22px;
+  border: 0;
 }
 
 
@@ -467,6 +479,11 @@ body {
   margin-right: 70px;
 }
 
+input[type="text"]::placeholder {
+  color: white;
+  opacity: 1;
+}
+
 .type-of-housing {
   margin-right: 176px;
   white-space: nowrap;
@@ -483,10 +500,17 @@ body {
 .col input {
   width: 144px;
   height: 48px;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
   border-color: white;
   position: relative;
   color: #FFFFFF;
+  border-style: solid;
+  padding: 0 17px;
+}
+
+.col.highprice input {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
 }
 
 .lowerprice:after {
@@ -546,9 +570,14 @@ form label {
   background: none;
 }
 
-.form-control::placeholder {
+.filter-column.form-control::placeholder {
   color: #FFFFFF;
   opacity: 0.3;
+}
+
+.form-style input::placeholder {
+  color: #000000;
+  opacity: 0.6;
 }
 
 form button {
@@ -560,10 +589,20 @@ form button {
 
 form button:first-of-type {
   font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: #82B3D3;
+  border: 0;
+}
+
+form button.button-spam {
+  font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   background: #82B3D3;
+  border: 0;
 }
 
 .filter-column button {
@@ -605,6 +644,7 @@ form button:first-of-type {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  border-radius: 4px;
 }
 
 .list-icon {
@@ -788,11 +828,12 @@ form button {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 160px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
 }
 
-.hotels-per-page select {
-  width: 160px;
-}
+
 
 .hotels-per-page p {
   font-size: 18px;
