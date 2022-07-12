@@ -252,7 +252,6 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-
 }
 
 .advantages-list>li:nth-child(n+3):nth-child(-n+5) b {
@@ -565,7 +564,6 @@ form button:first-of-type {
   line-height: 20px;
   text-transform: uppercase;
   background: #82B3D3;
-
 }
 
 .filter-column button {
@@ -622,6 +620,7 @@ form button:first-of-type {
   margin-right: auto;
   justify-content: space-between;
 }
+
 
 .product-card {
   font-weight: 700;
@@ -782,6 +781,9 @@ form button {
   display: flex;
   width: 386px;
   justify-content: space-between;
+}
+
+.hotels-per-page span {
   font-family: 'PT Sans';
   font-size: 18px;
   line-height: 21px;
