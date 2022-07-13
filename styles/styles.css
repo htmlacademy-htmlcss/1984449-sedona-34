@@ -16,7 +16,6 @@
 
 html {
   height: 100%;
-  ;
 }
 
 body {
@@ -26,10 +25,12 @@ body {
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   width: 1200px;
+  background: #F2F2F2;
 }
 
 .main-index, .main-inner {
   flex-grow: 1;
+  background: white;
 }
 
 .main-inner .spam-images {
@@ -91,6 +92,7 @@ body {
 .navigation-list .navigation-item--selected {
   border-bottom: 2px solid #000000;
   line-height: 66px;
+  border: 2px solid #756257;
 }
 
 .navigation-user {
@@ -194,6 +196,7 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 52px;
 }
 
 .description h1 {
@@ -296,6 +299,10 @@ body {
   padding: 0;
 }
 
+.advantages-panels li:first-child span {
+  width: 180px;
+}
+
 .bottom-panels li:nth-child(2) b {
   width: 130px;
 }
@@ -372,6 +379,7 @@ body {
   width: 574px;
   height: 60px;
   margin: 0 313px 93px 313px;
+  border: 0;
 }
 
 .spam {
@@ -448,6 +456,9 @@ body {
   border-radius: 10px 0 0 10px;
   padding-left: 22px;
   border: 0;
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 21px;
 }
 
 
@@ -475,6 +486,10 @@ body {
   display: flex;
 }
 
+.catalog-products form .filter-column:nth-of-type(4) {
+  margin-top: 60px;
+}
+
 .filter-column {
   margin-right: 70px;
 }
@@ -491,6 +506,7 @@ input[type="text"]::placeholder {
 
 .row {
   display: flex;
+  margin-top: 34px;
 }
 
 .col {
@@ -631,6 +647,7 @@ form button.button-spam {
   margin: auto;
   align-items: center;
   justify-content: space-between;
+  margin-top: 38px;
 }
 
 .devil-bridge .advantages-content b {
@@ -645,10 +662,16 @@ form button.button-spam {
   line-height: 21px;
   color: #333333;
   border-radius: 4px;
+  height: 50px;
+  width: 290px;
+  padding-left: 20px;
+  appearance: none;
+  border: 2px solid #E5E5E5;
 }
 
 .list-icon {
   margin-right: 8px;
+  border-radius: 4px;
 }
 
 .product-list {
@@ -659,6 +682,10 @@ form button.button-spam {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  margin-top: 32px;
+  padding-bottom: 66px;
+  border-bottom: 1px solid #E6E6E6;
+
 }
 
 
@@ -756,6 +783,7 @@ form button.button-spam {
 .pagination-numbers {
   display: flex;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .pagination-item {
@@ -831,6 +859,9 @@ form button {
   width: 160px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  height: 49px;
+  padding-left: 20px;
+  appearance: none;
 }
 
 
