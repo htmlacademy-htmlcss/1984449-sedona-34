@@ -228,6 +228,10 @@ body {
   background: white;
 }
 
+.spam {
+  display: flex;
+}
+
 .main-inner .spam-images {
   background: none;
 }
@@ -354,6 +358,18 @@ body {
   line-height: 20px;
   min-width: 130px;
   display: block;
+}
+
+.navigation-button:hover {
+  background-color: #615048;
+}
+
+.navigation-button:focus {
+  background-color: #615048;
+}
+
+.navigation-button:active {
+  background-color: #756157;
 }
 
 .main-images {
@@ -577,7 +593,20 @@ body {
   text-decoration: none;
 }
 
-.spam {
+.button-services:hover {
+  background-color: #615048;
+  ;
+}
+
+.button-services:focus {
+  background-color: #615048;
+}
+
+.button-services:active {
+  background-color: #756157;
+}
+
+.button-services .spam {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -613,6 +642,8 @@ body {
   border-radius: 0 10px 10px 0;
   width: 200px;
 }
+
+
 
 .spam-images {
   background-image: url("../images/background-spam.png");
@@ -656,11 +687,6 @@ body {
   line-height: 21px;
 }
 
-
-.social-link {
-  margin: 12px;
-  text-decoration: none;
-}
 
 .phone-numder a {
   font-size: 40px;
@@ -1006,6 +1032,18 @@ form button:first-of-type {
   border: 0;
 }
 
+form button:first-of-type:hover {
+  background-color: #68A2CA;
+}
+
+form button:first-of-type:focus {
+  background-color: #68A2CA;
+}
+
+form button:first-of-type:avtive {
+  background-color: #82B3D3;
+}
+
 form button.button-spam {
   font-weight: 700;
   font-size: 20px;
@@ -1013,6 +1051,18 @@ form button.button-spam {
   text-transform: uppercase;
   background: #82B3D3;
   border: 0;
+}
+
+form button.button-spam:hover {
+  background-color: #68A2CA;
+}
+
+form button.button-spam:focus {
+  background-color: #68A2CA;
+}
+
+form button.button-spam:active {
+  background-color: #68A2CA;
 }
 
 .filter-column button {
@@ -1065,8 +1115,9 @@ form button.button-spam {
 
 .sorting__select {
   position: relative;
-  height: 50px;
+  height: 53px;
   width: 290px;
+  margin-left: 112px;
 }
 
 .sorting__select:after {
@@ -1084,6 +1135,34 @@ form button.button-spam {
 .list-icon {
   margin-right: 8px;
   border-radius: 4px;
+}
+
+a.list-img {
+  display: block;
+  text-indent: -9999px;
+  background-image: url(../images/list-icon.png);
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 7px;
+  margin-left: 0px;
+}
+
+.list-img {
+  background-position: -12px -14px;
+}
+
+.list-img:hover {
+  background-position: -12px -67px;
+}
+
+.list-img:focus {
+  background-position: -12px -120px;
+}
+
+.list-img:active {
+  background-position: -12px -173px;
 }
 
 .product-list {
@@ -1141,6 +1220,18 @@ form button.button-spam {
   text-align: center;
 }
 
+.product-card .product-card-button:hover {
+  background-color: #615048;
+}
+
+.product-card .product-card-button:focus {
+  background-color: #615048;
+}
+
+.product-card .product-card-button:active {
+  background-color: #756157;
+}
+
 .product-card .product-card-button.button-right {
   background: #82B3D3;
   text-transform: uppercase;
@@ -1150,6 +1241,18 @@ form button.button-spam {
   border-radius: 4px;
 }
 
+.product-card .product-card-button.button-right:hover {
+  background-color: #68A2CA;
+}
+
+.product-card .product-card-button.button-right:focus {
+  background-color: #68A2CA;
+}
+
+.product-card .product-card-button.button-right:active {
+  background-color: #82B3D3;
+}
+
 .product-card .product-card-button.button-green {
   background: #7DB54F;
   text-transform: uppercase;
@@ -1157,6 +1260,18 @@ form button.button-spam {
   text-decoration: none;
   padding: 9px 15px 8px 15px;
   border-radius: 4px;
+}
+
+.product-card .product-card-button.button-green:hover {
+  background-color: #6C9E42;
+}
+
+.product-card .product-card-button.button-green:focus {
+  background-color: #6C9E42;
+}
+
+.product-card .product-card-button.button-green:active {
+  background-color: #7DB54F;
 }
 
 .product-card a:nth-of-type(3) {
@@ -1224,6 +1339,30 @@ form button.button-spam {
 
 .pagination-current a {
   color: #000000;
+}
+
+.pagination-item.pagination-current:hover {
+  background-color: #F2F2F2;
+}
+
+.pagination-item.pagination-current:focus {
+  background-color: #F2F2F2;
+}
+
+.pagination-item.pagination-current:active {
+  background-color: #F2F2F2;
+}
+
+.pagination-item:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-item:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-itemt:active {
+  background-color: #82B3D3;
 }
 
 .breadcrumbs {
@@ -1479,4 +1618,120 @@ footer {
   input[type="range"].multirange.switched.ghost::-ms-fill-lower {
     background: #ddd;
   }
+}
+
+a.social-icon {
+  display: block;
+  text-indent: -9999px;
+  background-image: url(../images/social-buttons.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.social-VK {
+  background-position: -21px -15px;
+}
+
+.social-VK:hover {
+  background-position: -21px -59px;
+}
+
+.social-VK:focus {
+  background-position: -21px -106px;
+}
+
+.social-VK:active {
+  background-position: -21px -146px;
+}
+
+.social-telegram {
+  background-position: -80px -15px;
+}
+
+.social-telegram:hover {
+  background-position: -80px -59px;
+}
+
+.social-telegram:focus {
+  background-position: -80px -106px;
+}
+
+.social-telegram:active {
+  background-position: -80px -146px;
+}
+
+.social-youtube {
+  background-position: -140px -15px;
+}
+
+.social-youtube:hover {
+  background-position: -140px -59px;
+}
+
+.social-youtube:focus {
+  background-position: -140px -106px;
+}
+
+.social-youtube:active {
+  background-position: -140px -146px;
+}
+
+a.phone-icon {
+  display: block;
+  text-indent: -9999px;
+  background-image: url(../images/phone-icon.png);
+  background-repeat: no-repeat;
+  width: 331px;
+  height: 40px;
+  display: inline-block;
+}
+
+.phone-icon {
+  background-position: -17px -25px;
+}
+
+.phone-icon:hover {
+  background-position: -17px -85px;
+}
+
+.phone-icon:focus {
+  background-position: -17px -145px;
+}
+
+.phone-icon:active {
+  background-position: -17px 206px;
+}
+
+a.footer-icon {
+  display: block;
+  text-indent: -9999px;
+  background-image: url(../images/footer-icon.png);
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 35px;
+  display: inline-block;
+}
+
+.footer-icon {
+  background-position: -19px -20px;
+}
+
+.footer-icon:hover {
+  background-position: -19px -88px;
+}
+
+.footer-icon:focus {
+  background-position: -19px -156px;
+}
+
+.footer-icon:active {
+  background-position: -19px -224px;
+}
+
+
+.navigation-button:hover {
+  background-color: #615048;
 }
