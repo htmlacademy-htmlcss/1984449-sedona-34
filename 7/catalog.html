@@ -69,43 +69,41 @@
           <div class="filter-column">
             <span class="catalog-list">Инфраструктура:</span>
             <p>
-              <label>
-                <input type="checkbox" checked>
-                Басссейн
-              </label>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="checkbox__1" checked>
+              <label class="checkbox__label" for="checkbox__1">Басссейн</label>
+            </div>
             </p>
             <p>
-              <label>
-                <input type="checkbox" checked>
-                Парковка
-              </label>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="checkbox__2" checked>
+              <label class="checkbox__label" for="checkbox__2">Парковка</label>
+            </div>
             </p>
-            <p>
-              <label>
-                <input type="checkbox">
-                WI-FI
-              </label>
-            </p>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="checkbox__3">
+              <label class="checkbox__label" for="checkbox__3">WI-FI</label>
+            </div>
           </div>
           <div class="type-of-housing">
             <span>Тип жилья:</span>
             <p>
-              <label>
-                <input name="list" type="radio" value="hotel" checked>
-                Гостиница
-              </label>
+            <div class="radio">
+              <input class="radio__input" name="list" type="radio" value="hotel" id="radio_1" checked>
+              <label class="radio__label" for="radio_1">Гостиница</label>
+            </div>
             </p>
             <p>
-              <label>
-                <input name="list" type="radio" value="motel">
-                Мотель
-              </label>
+            <div class="radio">
+              <input class="radio__input" name="list" type="radio" value="hotel" id="radio_2">
+              <label class="radio__label" for="radio_2">Мотель</label>
+            </div>
             </p>
             <p>
-              <label>
-                <input name="list" type="radio" value="apartaments">
-                Апартаменты
-              </label>
+            <div class="radio">
+              <input class="radio__input" name="list" type="radio" value="hotel" id="radio_3">
+              <label class="radio__label" for="radio_3">Апартаменты</label>
+            </div>
             </p>
           </div>
           <div class="filter-column">
@@ -128,11 +126,13 @@
     </div>
     <div class="sorting">
       <h2>Найдено страниц:38</h2>
-      <select class="select-control" aria-label="Сортировка">
-        <option value="popular">Сначала популярное</option>
-        <option selected value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогое</option>
-      </select>
+      <div class="sorting__select">
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярное</option>
+          <option selected value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+      </div>
       <div class="sorting-buttoms">
         <a href="#" class="button button-light">
           <span class="visually-hidden">Показать крупными</span>
@@ -147,6 +147,7 @@
           <img class="list-icon" src="images/list-icon-3.svg" alt="Показать мелким списком">
         </a>
       </div>
+    </div>
     </div>
     <ul class="product-list">
       <li class="product-card">
