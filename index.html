@@ -160,15 +160,25 @@
             <img src="./images/close.svg" alt="закрыть окно">
           </a>
           <label class="data-start" for="start">Дата Заезда:</label>
-          <input class="start-input" type="date" id="start" name="trip-start" value="27 апреля 2020" min="2020-04-28" max="2030-12-31">
+          <div class="start-input-type"> <input class="start-input" value="27 апреля 2020" type="text" id="start" name="trip-start"
+              placeholder="27 апреля 2020" min="2020-04-28" max="2030-12-31"></div>
           <p class="start-clue">Мы не можем отправить вас в прошлое.</p>
           <label class="end-data" for="end">Дата Выезда:</label>
-          <input class="end-input" type="date" id="start" name="trip-end" value="1 сентября 2021" min="2020-04-28" max="2030-12-31">
+          <div class="end-input-type"><input class="end-input" value="1 сентября 2021" type="text" id="end" name="trip-end"
+              placeholder="1 сентября 2021" min="2020-04-28" max="2030-12-31">
+          </div>
           <p class="end-clue">На эти даты есть свободные номера. Пока есть.</p>
           <label class="adults" for="adults">Взрослые:</label>
-          <input class="adults-number" type="number" id="adults" name="adults" min="1" max="100">
-          <label class="children" for="children">Дети: <div class="calendar-info">i</div><div class="calendar-tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div></label>
-          <input class="children-number" type="number" id="children" name="children" min="1" max="100">
+          <div class="adults-number-type">
+            <input class="adults-number" type="text" value="2" id="adults" name="adults">
+          </div>
+          <label class="children" for="children">Дети: <div class="calendar-info">i</div>
+            <div class="calendar-tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+              лет. Дети до 6 лет размещаются бесплатно.</div>
+          </label>
+          <div class="children-number-type">
+            <input class="children-number" type="text" value="1" id="children" name="children">
+          </div>
           <button class="button-search" type="submit">Найти</button>
         </div>
       </div>
